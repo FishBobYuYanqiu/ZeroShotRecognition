@@ -1,0 +1,9 @@
+# Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
+## Introduction
+### Problem
+- **zero-shot recognition**: learning a visual classiﬁer for a category with zero training examples, just using the word embedding of the category and its relationship to other categories
+- Explanation: current recognition algorithms can only recognize the categories they are trained with. Adding a new category requires collecting thousands of training examples and then retraining the classiﬁers
+- Objective:  transfer knowledge obtained from familiar classes to describe the unfamiliar classes (generalization)
+
+## Graph Convolutional Network
+- Procedures: Word Embedding with word2vec; Build Knowledge Graph; Graph Convolutional Network Layer (convolved by knowledge graph); train classifier and use true classifier as supervisor
